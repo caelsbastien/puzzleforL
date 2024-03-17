@@ -1,123 +1,70 @@
-# Agility CMS & Next.js Starter
+# Getting Started with Create React App
 
-This is sample Next.js starter site that uses Agility CMS and aims to be a foundation for building fully static sites using Next.js and Agility CMS.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-[Live Website Demo](https://agilitycms-nextjs-starter-blog.vercel.app/)
+## Available Scripts
 
-[New to Agility CMS? Sign up for a FREE account](https://agilitycms.com/free)
+In the project directory, you can run:
 
-## 📢 UPDATED FOR NEXT.JS 13.5 📢
+### `npm start`
 
-- We have updated this starter for Next.js 13. It is using a pre-release version of the [@agility/nextjs](https://www.npmjs.com/package/@agility/nextjs) npm package specialized for app router.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## About This Starter
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-- Uses our [`@agility/nextjs`](https://www.npmjs.com/package/@agility/nextjs) package to make getting started with Agility CMS and Next.js easy
-- Support for Next.js 13 and React 18
-- Connected to a sample Agility CMS Instance for sample content & pages
-- Uses the `getStaticProps` function from Next.js to allow for full SSG (Static Site Generation)
-- Supports [`next/image`](https://nextjs.org/docs/api-reference/next/image) for image optimization using the `<Image />` component or the next.js `<Image />` component for images that aren't stored in Agility.
-- Supports full [Page Management](https://help.agilitycms.com/hc/en-us/articles/360055805831)
-- Supports Preview Mode
-- Supports the `next/font` package
-- Uses the `revalidate` and `fallback` properties to enable [ISR (Incremental Static Regeneration)](https://nextjs.org/docs/basic-features/data-fetching#incremental-static-regeneration) builds
-- Provides a functional structure that dynamically routes each page based on the request, loads a Page Templates dynamically, and also dynamically loads and renders appropriate Agility CMS Page Modules (as React components)
-- Supports component level data fetching.
+### `npm test`
 
-### Tailwind CSS
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-This starter uses [Tailwind CSS](https://tailwindcss.com/), a simple and lightweight utility-first CSS framework packed with classes that can be composed to build any design, directly in your markup.
+### `npm run build`
 
-### TypeScript
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-This starter is written in TypeScript, with ESLint.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## Getting Started
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-To start using the Agility CMS & Next.js Starter, [sign up](https://agilitycms.com/free) for a FREE account and create a new Instance using the Blog Template.
+### `npm run eject`
 
-1. Clone this repository
-2. Run `npm install` or `yarn install`
-3. Rename the `.env.local.example` file to `.env.local`
-4. Retrieve your `GUID`, `API Keys (Preview/Fetch)`, and `Security Key` from Agility CMS by going to [Settings > API Keys](https://manager.agilitycms.com/settings/apikeys).
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-[How to Retrieve your GUID and API Keys from Agility](https://help.agilitycms.com/hc/en-us/articles/360031919212-Retrieving-your-API-Key-s-Guid-and-API-URL-)
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-## Running the Site Locally
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-### Development Mode
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-When running your site in `development` mode, you will see the latest content in real-time from the CMS.
+## Learn More
 
-#### yarn
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-1. `yarn install`
-2. `yarn dev`
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-This will launch the site in development mode, using your preview API key to pull in the latest content from Agility.
+### Code Splitting
 
-#### npm
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-1. `npm install`
-2. `npm run dev`
+### Analyzing the Bundle Size
 
-### Production Mode
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-When running your site in `production` mode, you will see the published content from Agility.
+### Making a Progressive Web App
 
-#### yarn
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-1. `yarn build`
-2. `yarn start`
+### Advanced Configuration
 
-#### npm
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-1. `npm run build`
-2. `npm run start`
+### Deployment
 
-## Accessing Content
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-You can use the Agility Content Fetch SDK normally - either REST or GraphQL within server components.
+### `npm run build` fails to minify
 
-## Deploying Your Site
-
-The easiest way to deploy a Next.js website to production is to use [Vercel](https://vercel.com/) from the creators of Next.js, or [Netlify](https:netlify.com). Vercel and Netlify are all-in-one platforms - perfect for Next.js.
-
-## Resources
-
-### Agility CMS
-
-- [Official site](https://agilitycms.com)
-- [Documentation](https://agilitycms.com/docs)
-
-### Next.js
-
-- [Official site](https://nextjs.org/)
-- [Documentation](https://nextjs.org/docs/getting-started)
-
-### Vercel
-
-- [Official site](https://vercel.com/)
-
-### Netlify
-
-- [Official site](https://netlify.com/)
-
-### Tailwind CSS
-
-- [Official site](http://tailwindcss.com/)
-- [Documentation](http://tailwindcss.com/docs)
-
-### Community
-
-- [Official Slack](https://agilitycms.com/join-slack)
-- [Blog](https://agilitycms.com/resources/posts)
-- [GitHub](https://github.com/agility)
-
-- [LinkedIn](https://www.linkedin.com/company/agilitycms)
-- [X](https://x.com/agilitycms)
-- [Facebook](https://www.facebook.com/AgilityCMS/)
-
-## Feedback and Questions
-
-If you have feedback or questions about this starter, please use the [Github Issues](https://github.com/agility/agilitycms-nextjs-starter/issues) on this repo, or join our [Community Slack Channel](https://agilitycms.com/join-slack).
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
